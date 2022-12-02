@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 清除所有内外边距 */
+    box-sizing: border-box;
+    /* css3盒子模型 */
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; */
+}
+
+
+
+em,
+i {
+    font-style: nomrmal;
+    /* 斜体文字不倾斜 */
+}
+
+ul,
+ol {
+    list-style: none;
+    /* 去掉小圆点 */
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    /* 照顾低版本游览器取消图片底册有空白缝隙 */
+}
+
+button {
+    cursor: pointer;
+    /* 当鼠标经过 按钮时变小手 */
+}
+
+a {
+    color: rgb(21, 2, 2);
+    text-decoration: none;
+    /* 颜色取消下划线 */
+}
+
+a:hover {
+    color: ;
+    /* 经过链接的颜色 */
+}
+
+button,
+input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* 按钮文本的字体 */
+}
+
+body {
+
+    -webkit-font-smoothing: antialiased;
+    /* filter: drop-shadow(0 0 10px white); */
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+    font: 12px/1.5 Micrpsoft YaHei;
+    color: ;
+    /* 抗据此性背景色 文字大小/行距字体文字颜色 */
+}
+
+.hidden .none {
+    display: none
+        /* 隐藏元素 */
+}
+
+.clearfix::after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+    /* 清除浮动 */
+}
+
+.clearfix {
+    *zoom: 1
+}

@@ -1,0 +1,38 @@
+#main>.format-mod {
+	background-color: rgb(0, 255, 255, .1);
+	/* background: linear-gradient(#00DBDE, #FC00FF); */
+	backdrop-filter: blur(30px);
+}
+
+#main>.format-mod li {
+	list-style-type: disc;
+	margin-left: 3em;
+}
+
+#main>.format-mod>.main-mod {
+	padding: 10px;
+}
+
+#main>.format-mod>.bottom-mod {
+	border-radius: 10px;
+	background: rgb(255, 255, 255, .6);
+	color: #666;
+	padding: 0px 10px;
+}
+
+#main>.format-mod>.bottom-mod>.t1 {
+	display: inline-block;
+	width: 30%;
+}
+
+#main>.format-mod>.bottom-mod>.t2 {
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+}
+
+#main>.format-mod>.bottom-mod>.t3 {
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+}

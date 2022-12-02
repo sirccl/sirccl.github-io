@@ -1,0 +1,407 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	/* font-size: 16px; */
+	/* font-family: Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif; */
+}
+
+@font-face {
+	font-family: myfont;
+	src: url(/css/fontsize/江西拙楷2.0_猫啃网.ttf);
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+.main-mod ul li {
+	margin: 1.5rem 0;
+}
+
+/* 主背景图片 */
+body {
+	/* display: flex; */
+	box-sizing: border-box;
+	background-color: ffb5af;
+	background-image: url('../images/756.jpg');
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+}
+
+/* 移动端背景 */
+@media screen and (max-width:1000px) {
+	body {
+		background-color: transparent;
+		background-image: url(../images/bg.png);
+		background-size: auto;
+		box-sizing: border-box;
+		background-size: cover;
+		background-repeat: repeat-y;
+		background-attachment: fixed;
+		width: 100%;
+		height: 100%;
+		right: 0;
+		bottom: 0;
+
+	}
+
+
+}
+
+/* 视频样式 */
+.videooo {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+@media screen and (max-width:1000px) {
+	.videooo {
+		max-height: 400px;
+	}
+}
+
+
+/* 传送门 */
+.chuansongmen img {
+	width: 100%;
+}
+
+/*二级导航条*/
+
+
+
+
+
+/* 最上导航栏 */
+#list {
+	background: rgb(0, 0, 0, 0.3);
+	text-align: center;
+	/* position: fixed; */
+	width: 100%;
+}
+
+/* 导航栏里ul */
+#list>#top-main {
+	background: rgb(0, 0, 0, 0.3);
+	/* position: fixed; */
+	font-size: 2rem;
+	height: 60px;
+	display: inline-block;
+	width: 80%;
+	min-width: 300px;
+
+}
+
+@media screen and (max-width:1000px) {
+	#list>#top-main {
+		position: fixed;
+		background: rgb(0, 0, 0, 0.3);
+		font-size: 2.8rem;
+		font-family: myfont;
+		height: 100px;
+		line-height: 100px;
+		display: inline-block;
+		width: 100%;
+		min-width: 200px;
+		margin-left: -490px;
+	}
+
+}
+
+/* 导航栏里ul li */
+#list>#top-main>li,
+#list>#top-main>a>li {
+	line-height: 60px;
+	display: inline-block;
+	height: 60px;
+	width: 15%;
+	color: rgb(141, 246, 255);
+	vertical-align: top;
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+	#list>#top-main>li,
+	#list>#top-main>a>li {
+		list-style: none;
+		line-height: 100px;
+		display: inline-block;
+		height: 100px;
+		width: 20%;
+		min-width: 100px;
+		color: rgb(141, 246, 255);
+		vertical-align: top;
+	}
+}
+
+
+
+#top>#list>#top-main>a>li {}
+
+#list>#top-main>li:hover,
+#list>#top-main>a>li:hover {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+}
+
+/* #top>a>.banner-bottom {
+	height: 100%
+} */
+
+#list>#top-main>li ul {
+	display: none;
+	background: rgba(12, 182, 255, 0.1);
+	min-width: 110px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#list>#top-main>li ul>li {
+	height: 50px;
+	line-height: 50px;
+	margin: 10px 0;
+
+}
+
+#list>#top-main>li ul>li>a {
+	text-decoration: none;
+	font-size: 2rem;
+	white-space: nowrap;
+	line-height: 50px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: white;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	margin: center;
+}
+
+#list>#top-main>li:hover>ul {
+	display: block;
+}
+
+#list>#top-main>li>ul>li a:hover {
+	background: rgba(204, 0, 255, 0.5);
+	border-radius: 10px;
+}
+
+/* 导航栏结束 */
+
+
+/* 长图按钮显示及隐藏 */
+
+
+/* 最上长图 */
+#conlop {
+	background-image: url('../images/zy.png');
+	background-position: center;
+	height: 314px;
+	border-radius: 0;
+	background-size: auto;
+	box-sizing: border-box;
+	margin-top: 0;
+}
+
+#guanbi div {
+	font-size: 1.8rem;
+	font-weight: 100;
+	color: rgba(189, 27, 238, 0.8);
+	text-overflow: ellipsis;
+	margin-top: 185px;
+	white-space: nowrap;
+	outline: none;
+}
+
+#btn6 div {
+	font-size: 1.8rem;
+	font-weight: 100;
+	color: rgba(189, 27, 238, 0.8);
+	text-overflow: ellipsis;
+	margin-top: 175px;
+	margin-left: 51px;
+	white-space: nowrap;
+	outline: none;
+}
+
+/* 关闭按钮 */
+#guanbi {
+	border: none;
+	background-color: transparent;
+	background-image: url(/images/jltu.png);
+	background-position: -1000 -644;
+	zoom: .6;
+	margin-left: 0px;
+	left: -0;
+	position: absolute;
+	width: 193px;
+	height: 209px;
+	margin-top: 40px;
+	outline: none;
+}
+
+/* 长图按钮显示及隐藏 */
+
+
+
+/* <!-- 单击按钮显示或隐藏 --> */
+#btn6 {
+	border: none;
+	background-color: transparent;
+	background-image: url(/images/jltu.png);
+	background-position: -1320 -368;
+	zoom: .6;
+	/* transform: scale(.6); */
+	position: absolute;
+	margin-top: 300px;
+	margin-left: -15px;
+	left: -0;
+	width: 180px;
+	height: 160px;
+	outline: none;
+}
+
+#img6 {
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 120px;
+	width: 500px;
+	height: 350px;
+	display: none;
+	border-radius: 10px;
+}
+
+#img6 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* <!-- 单击按钮显示或隐藏结束 --> */
+
+
+/*主体*/
+
+
+
+#main {
+	border: 1px solid transparent;
+	border-radius: 10px;
+	margin: 20px auto;
+	width: 85%;
+	min-width: 750px;
+
+}
+
+#main>div {
+	margin: 10px;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(200, 200, 200, 0.6);
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+/*最下方信息*/
+#bottom {
+	margin: 0 auto;
+	width: 100%;
+	border-top: 1px solid #aaa;
+	background: rgba(190, 190, 190, 0.4);
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: top;
+	height: 100%;
+}
+
+#bottom>.information {
+	display: block;
+	vertical-align: top;
+}
+
+.information>a {
+	text-decoration: none;
+	color: #ff0000;
+}
+
+#bottom>.official {
+	display: inline-block;
+}
+
+#bottom>.official>ul>li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 10px;
+	position: relative;
+	height: 80px;
+	line-height: 80px;
+}
+
+#bottom>.official>ul>.bili>a>img {
+	height: 80px;
+}
+
+#bottom>.official>ul>.qq>a>img {
+	height: 65px;
+	margin-top: 10px;
+}
+
+#bottom>.official>ul>.wechat>a>img {
+	height: 65px;
+	margin-top: 5px;
+}
+
+#bottom>.official>ul>.github>a>img {
+	margin-top: 10px;
+	height: 60px;
+}
+
+#bottom>.official>ul>li>.xx {
+	display: none;
+}
+
+/* beiyong */
+#bottom>.official>ul>li:hover>.xx {
+	display: block;
+	position: absolute;
+	bottom: 80px;
+	width: 300px;
+	height: auto;
+	border-radius: 25px;
+}
+
+/*按钮关于我*/
+#go-top {
+	margin-bottom: 10%;
+	position: fixed;
+	right: -30px;
+	bottom: 6%;
+	border: 1px solid #55557f;
+	background: #ffffff;
+	height: 30px;
+	width: 105px;
+	border-radius: 15px;
+	line-height: 30px;
+	text-indent: 10px;
+	font-size: 20px;
+	color: #555;
+	transition: 0.7s;
+}
+
+#go-top:hover {
+	right: -10px;
+}

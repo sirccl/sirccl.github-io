@@ -1,0 +1,789 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content="maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="shortcut icon" href="/img/icon/12.png">
+	<title>百花缭乱</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/index.css">
+
+	<link rel="stylesheet" href="css/手风琴.css">
+
+	<link rel="stylesheet" href="css/3D轮播图.css">
+	<!-- 下滑所有背景颜色样式 -->
+	<link rel="stylesheet" href="css/xiacolor.css">
+	<!-- 二级菜单 -->
+	<link rel="stylesheet" href="css/二级菜单.css">
+	<script src="ccl.js/二级菜单.s"></script>
+	<!-- 字体图标 -->
+	<link rel="stylesheet" href="css/fontsstyle.css">
+	<script src="js/life.js"></script>
+	<script src="js/jquery_min.js"></script>
+	<script src="ccl.js/sakura.js"></script>
+	<base target="_blank">
+</head>
+
+<body>
+
+
+	<!-- y樱花飘落 -->
+	<div class=" bgimg">
+		<div class="text1">
+			<p></p>
+		</div>
+		<div class="text2">
+			<p></p>
+		</div>
+	</div>
+
+
+
+
+	<!-- 最上导航栏 -->
+	<div id="list">
+		<ul id="top-main">
+
+
+			<li style="margin-left:50px ;">工具I
+				<ul>
+					<li><a href="https://9elements.github.io/fancy-border-radius/">圆角设计</a></li>
+					<li><a href="https://www.grabient.com/">CSS渐变色工具</a></li>
+					<li><a href="https://www.materialpalette.com/">配色网站</a></li>
+					<li><a href="https://animate.style/">Animate css</a></li>
+					<li><a href="https://neumorphism.io/#e0e0e0">阴影设计</a></li>
+					<li><a href="https://developer.mozilla.org/zh-CN/">MDN-前端学习</a></li>
+					<li><a href="https://www.swiper.com.cn/">swiper插件</a></li>
+					<li><a href="https://www.winfengtech.com/htmview">HTML在线编辑器</a></li>
+					<li><a href="https://www.materialpalette.com/">元素配色库</a></li>
+					<li><a href="https://www.iconfont.cn/">矢量图标库</a></li>
+					<li><a href="https://www.pexels.com/zh-cn/">高像素图库</a></li>
+					<li><a href="https://loading.io/">加载动画(可爱)</a></li>
+					<li><a href="https://getwaves.io/">波纹设计</a></li>
+				</ul>
+			</li>
+			<li>传送门
+				<ul>
+					<li></li>
+				</ul>
+			</li>
+
+			<li>工具II
+				<ul>
+
+					<li><a href="html/about.html">for you </a></li>
+					<li><a href="html/guanyuwo.html">关于我</a></li>
+				</ul>
+			</li>
+			<li>经典游戏
+				<ul>
+					<li><a href="html/Fruit_Ninja/index.html">切水果游戏</a></li>
+					<li><a href="gamehtml/xiangqi/xiangqi/index.html">中国象棋</a></li>
+					<li><a href="gamehtml/html5-flappy-text/index.html">Flappy</a></li>
+					<li><a href="gamehtml/pac-man/index.html">吃豆人</a></li>
+					<li><a href="gamehtml/html5-fly/play.html">太空战机</a></li>
+					<li><a href="gamehtml/html5-mario/index.html">超级玛丽</a></li>
+					<li><a href="gamehtml/Html5-xxl/index.html">城市消消乐</a></li>
+					<li><a href="gamehtml/mouseHit/index.html">打地鼠</a></li>
+					<li><a href="gamehtml/buyudar/index.html">捕鱼达人</a></li>
+					<li><a href="http://www.hackrom.cn/index.php?m=content&c=index&f=fc&key=317">魂斗罗</a></li>
+					<li><a href="https://tr.heheda.top/">神庙逃亡</a></li>
+					<li><a href="https://wwd.lanzout.com/b03j7qacd">18小游戏</a></li>
+				</ul>
+			</li>
+
+
+		</ul>
+	</div>
+
+	<!-- 长图按钮显示及隐藏图片盒子 -->
+
+	<div id="conlop"></div>
+	<!-- 长图按钮显示及隐藏 -->
+
+
+
+	<!-- 单击按钮显示或隐藏 -->
+	<div id="img6"><img src="/images/8.png"></div>
+	<button id="btn6">
+		<div class="anniu2">图片图片</div>
+	</button>
+
+	<script>
+		// 1.获取事件源
+		var btn = document.getElementById("btn6");
+		var img = document.getElementsByTagName("img6")[0];
+		// var isShow = true;
+		// 2.绑定事件
+		btn.onclick = function () {
+			// 3. 事件驱动程序
+			if (btn.innerHTML === "1") {
+				img6.style.display = "none";
+				btn.innerHTML = "2";
+				// isShow = false;
+			} else {
+				img6.style.display = "block";
+				btn.innerHTML = "1";
+				// isShow = true;
+			}
+		}
+	</script>
+	<!-- 单击按钮显示或隐藏结束 -->
+
+
+	<!-- 生命倒计时木块 -->
+
+	<div id="main">
+
+
+		<!-- 长图按钮显示及隐藏按钮适配位置 -->
+		<button id="guanbi">
+			<div class="anniu1">关闭长图</div>
+		</button>
+
+		<!-- 长图按钮显示及隐藏 按钮结束-->
+
+		<!-- 长图按钮显示及隐藏js -->
+		<script>
+			// 1.获取事件源
+			var btn2 = document.getElementById("guanbi");
+			var img = document.getElementsByTagName("conlop")[0];
+			// var isShow = true;
+			// 2.绑定事件
+			btn2.onclick = function () {
+				// 3. 事件驱动程序
+				if (btn2.innerHTML === "") {
+					conlop.style.visibility = "hidden";
+					btn2.innerHTML = "1";
+					// isShow = false;
+				} else {
+					conlop.style.visibility = "visible";
+					btn2.innerHTML = "";
+					// isShow = true;
+				}
+			}
+		</script>
+		<!-- 长图按钮显示及隐藏 js结束-->
+
+
+
+
+
+		<!-- 生命样式 -->
+		<link rel="stylesheet" href="css/life.css">
+		<div id="count_down">
+			<div class="text">
+				<div class="t1">Life时光倒计时</div>
+				<div class="t2">
+				</div>
+
+
+			</div>
+
+			<div class="time">
+				<span id="t_d">00 </span>天
+				<span id="t_h">00 </span>时
+				<span id="t_m">00 </span>分
+				<span id="t_s">00 </span>秒
+			</div>
+		</div>
+
+
+
+		<!-- 超级传送门 -->
+
+		<div class="chuansongmen" style="background: transparent; border-bottom: 1px solid aqua; ">
+			<a href="yuanshumofa.html"><img src="images/chuansongmen.png" alt=""></a>
+		</div>
+
+
+
+		<!-- 视频 -->
+		<div class="videooo">
+			<video src="/images/Soloop_20221126203520.mp4" style="width:100%; height:100%;border-radius: 10px;" preload
+				controls loop></video>
+		</div>
+
+
+		<!-- bilibili原始神 -->
+		<link rel=" stylesheet" href="css/w3school.css">
+		<div class="format-mod" id="w3s" style="width: 90%;">
+			<div class="main-mod" style="box-shadow: 10px 10px 10px -4px rgb(0, 0, 0, .3);">
+
+
+				<iframe src="https://chp.shadiao.app/" border="0" frameborder="no" framespacing="0"
+					allowfullscreen="true"
+					style="width:100%;border-radius: 10px;height: 600px;background: transparent;">
+				</iframe>
+
+			</div>
+
+		</div>
+		<!-- 元神引入网页结束 -->
+
+		<!-- w3school样式  -->
+		<link rel=" stylesheet" href="css/w3school.css">
+		<div class="format-mod" id="w3s">
+			<div class="main-mod">
+				<iframe src="https://noveltags.com/" style="width:100%;border-radius: 10px;" border="0" frameborder="no"
+					framespacing="0"></iframe>
+			</div>
+			<div class="bottom-mod">
+				<span class="t1"><span style="color:#900;font-style:italic">Novel</span>Ai</span><span class="t2"><a
+						href="https://noveltags.com/" style="color:#555;">novelai</a></span><span
+					class="t3">2022.10.23</span>
+			</div>
+		</div>
+
+
+		<!-- https://www.w3school.com.cn/ -->
+
+
+
+		<!-- 手风琴 -->
+		<div id="body10" style=" background-color: transparent; margin-top: 20px;">
+			<div class="shell3">
+				<div class="box11">
+					<video src="/images/爱上去水印-1668970510048.mp4" controls loop></video>
+
+					<span>imge</span>
+				</div>
+				<div class=" box11">
+					<img src="/img/r18/3.jpg">
+					<span>Video</span>
+				</div>
+				<div class="box11">
+					<img src="/img/r18/4.jpg">
+					<span>File</span>
+				</div>
+				<div class="box11">
+					<img src="/img/r18/11.jpg">
+					<span>Music</span>
+				</div>
+				<div class="box11">
+					<img src="/img/r18/6.jpg">
+					<span>Lyric</span>
+				</div>
+			</div>
+		</div>
+		<!-- 手风琴结束 -->
+
+		<!-- 3d轮播图 -->
+		<div style=" background-color: transparent;">
+			<iframe src="html/3dlunbotu.html" style="width:100%;height:600px;border-radius: 10px;" border="0"
+				frameborder="no" framespacing="0"></iframe>
+		</div>
+		<!-- 3d轮播图结束 -->
+
+
+
+
+
+
+		<!-- 后面各种介绍 -->
+		<div class="format-mod" style="letter-spacing: 2px;">
+			<div class="main-mod" style="font-size: 1.5rem;">
+				<a style="color:#b00;font-size:20px;">精灵盒子</a>
+				elf box 1.0<br><br>
+				版本信息：<br>
+				<ul style="font-size:1.5rem ">
+					<li> 顶部 “ 导航条 ” 模块施工完毕，可以愉快地摸鱼了，并且可以点击下载里面的按钮，可以下载常用的软件了。</li>
+
+					<li>顶部关于按钮有自我介绍和表单页面</li>
+
+					<li>侧边栏加入了悬浮的音乐小视窗</li>
+
+
+					<li>最底部的悬浮还是一样的反人类，难用死</li>
+				</ul>
+				<br>
+				求个关注，求个赞助，求个赞助，我是个小帅哥，感谢！
+			</div>
+			<div class="bottom-mod">
+				<span class="t1">版本信息</span><span class="t2">01</span><span class="t3">2022.11.20</span>
+			</div>
+		</div>
+
+		<div class="format-mod">
+			<div class="main-mod">
+				敬请期待<br><br>
+				版本信息：<br>
+				<ul style="font-size:1.5rem ">
+					<li>目前仅适配web端</li>
+
+
+					<li>顶部下载下拉目前已经有一些常用软件可以下载了。</li>
+
+					<li>最后，细心的你可能已经发现了，我的网站许多的BUG和反人类的设计，敬请谅解</li>
+
+				</ul>
+				<br>
+				<a style="color:#666;font-size:5px;">、</a>
+			</div>
+			<div class="bottom-mod">
+				<span class="t1">更改说明</span><span class="t2">02</span><span class="t3">2022.11.30</span>
+			</div>
+		</div>
+
+		<div class="format-mod">
+			<div class="main-mod">
+				elf box 2.0还在规划中！ <br><br>
+				版本信息：<br>
+				<ul style="font-size:1.5rem ">
+					<li>加入了导航栏的二级菜单。</li>
+
+					<li>加入了更多模块</li>
+				</ul>
+			</div>
+			<div class="bottom-mod">
+				<span class="t1">更新说明</span><span class="t2">03</span><span class="t3">2022.11.30</span>
+			</div>
+		</div>
+
+		<div class="format-mod">
+			<div class="main-mod">
+				无垢颂诗<br><br>
+				新版本elf box 敬请期待<br><br>
+				版本信息：<br>
+				<ul style="font-size:1.5rem ">
+
+					<li>改用独立的单个网页。</li>
+
+					<li>为适配移动端，准备使用弹性盒子布局</li>
+
+					<li>全局采用半透明的摸鱼样式。</li>
+
+					<li>经典名言:</li>
+
+					<li>相见争如不见多情何似无情</li>
+
+					<li>江河远阔，人间烟火，无一是你，无一不是你。——《江海共余生》</li>
+					<li>PS：也可以从最下方二维码加到我哦，爱自己，爱美人，也爱江山！吃不了生活的苦，只想尝尝爱情的甜。</li>
+
+				</ul>
+			</div>
+			<div class="bottom-mod">
+				<span class="t1">说明</span><span class="t2">001</span><span class="t3">2022.11.30</span>
+			</div>
+		</div>
+		<!-- qq二维码 -->
+		<a name="about"></a>
+		<div class="format-mod">
+			<div class="main-mod">
+				<iframe src="html/qr_code.html" style="width:100%;height:420px;border-radius: 10px;" border="0"
+					frameborder="no" framespacing="0"></iframe>
+			</div>
+		</div>
+
+		<link rel="stylesheet" href="css/information.css">
+		<div class="format-mod about">
+			<div class="main-mod">
+				<p align="center" class="title">
+					<a>CCL个人Web page</a> <br>This is my time
+				</p>
+				<br>
+				<br>
+
+				<p class="tt2">地址</p>
+				<p class="content1" style="font-size:1.5rem ">
+					none<br>
+					<!-- xxxxx -->
+
+				</p>
+
+				<p class="tt2">简介</p>
+				<p class="content1" style="font-size:1.5rem ">
+					若東方皈依駝鈴應為神之本意
+				</p>
+
+				<p class="tt2">More</p>
+				<p class="content1" style="font-size:1.5rem ">
+					我的心，这只野鸟，在你的双眸里看见了天空。——泰戈尔
+				</p>
+
+				<p class="tt2">声明</p>
+				<p class="content1" style="font-size:1.5rem ">
+					本网站不用于任何商业用途。除了引用一个JQuary部分，其他纯手敲，未使用任何Animate插件、swiper插件。<br>
+				</p>
+			</div>
+			<div class="bottom-mod">
+				<span class="t1"></span><span class="t2">关于</span><span class="t3"></span>
+			</div>
+		</div>
+	</div>
+
+	<!-- 网易云外链播放器 -->
+	<link rel="stylesheet" href="css/music.css">
+	<iframe id="music" frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=86
+		src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=7406582"></iframe>
+	<a id="go-top" href="/html/guanyuwo.html">关于我</a>
+
+
+
+	<!-- 网易云外链播放器 --> -->
+	<link rel="stylesheet" href="css/music.css">
+	<iframe id="music2" frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=86
+		src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=102342536"></iframe>
+
+
+
+	<!-- 最下qqvxteleger -->
+	<div id="bottom">
+		<div class="official">
+			<ul>
+				<li class="bili">
+					<img src="images/qr_code/douyin.png" alt="" class="xx">
+					<a href=""><img src="images/bili.png" alt=""></a>
+				</li>
+				<li class="qq">
+					<img src="images/qr_code/qq.jpg" alt="" class="xx">
+					<a href=""><img src="images/qq.png" alt=""></a>
+				</li>
+				<li class="wechat">
+					<img src="images/wechat.png" alt="" class="xx">
+					<a href=""><img src="images/wechat.png" alt=""></a>
+				</li>
+				<li class="github">
+					<a href="https://github.com/"><img src="images/github.png" alt=""></a>
+				</li>
+			</ul>
+		</div>
+		<!-- ip信息备案网站 -->
+		<hr>
+		<div class="information">
+			cl的个人Web page&nbsp;&nbsp;版本：1.0&nbsp;&nbsp;管理员：cl&nbsp;&nbsp;网站备案号：<a href="#">xxxxxx</a>&nbsp;&nbsp;©2022
+			elf box,.........
+		</div>
+	</div>
+
+
+
+
+	<!-- 二级左侧弹出菜单 -->
+	<input type="checkbox" id="check">
+	<label for="check">
+		<div id="btn"></div>
+		<div id="cancel"></div>
+
+	</label>
+	<div class="sidebar">
+		<header>超级菜单栏</header>
+		<div class="big_box">
+
+			<div class="left_daohang">
+
+
+
+				<!-- 第一块：一级标题1 -->
+				<div class="item1" name='1'>
+					<div class="item1_img1 item1_img"></div>
+					<span class="item1_text">我的应用</span>
+					<div class="you"></div>
+				</div>
+				<div class="item1_item2">
+
+
+
+					<!-- 我的应用 -->
+
+					<div class="item1">
+						<div class="item1_img5 item1_img"></div>
+						<span class="item1_text">精选栏目</span>
+						<div class="you2"></div>
+					</div>
+					<div class="item1_item2">
+						<div class="item2">
+							<span class="item2_text"><a href="https://www.thiswaifudoesnotexist.net/">随机漫头</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="https://www.novipnoad.com/">NO视频</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a hrelf="https://mzh.moegirl.org.cn/Mainpage">萌娘百科</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="https://emojixd.com/">Emojo百科</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="https://www.cbaigui.com/">中国妖怪百科</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="">二级标题1</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="">二级标题1</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="">二级标题1</a></span>
+						</div>
+					</div>
+
+					<div class="item1">
+						<div class="item1_img5 item1_img"></div>
+						<span class="item1_text">美学应用</span>
+						<div class="you2"></div>
+					</div>
+					<div class="item1_item2">
+						<div class="item2">
+							<span class="item2_text"><a
+									href="https://aidn.jp/mikutap/?fullScreen=true">Mikutap</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a
+									href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">美学流体</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="https://iirose.com/">蔷薇花园</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a
+									href="https://learningmusic.ableton.com/zh-Hans/">编曲创作神器</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="http://weavesilk.com/">光线动画制作</a></span>
+						</div>
+					</div>
+
+					<div class="item1">
+						<div class="item1_img5 item1_img"></div>
+						<span class="item1_text">设计相关</span>
+						<div class="you2"></div>
+					</div>
+					<div class="item1_item2">
+						<div class="item2">
+							<span class="item2_text"><a href="#">二级标题1</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="#">二级标题1</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="#">二级标题1</a></span>
+						</div>
+						<div class="item2">
+							<span class="item2_text"><a href="#">二级标题1</a></span>
+						</div>
+					</div>
+					<!-- 我的应用 结束-->
+
+
+
+
+
+				</div>
+
+
+
+				<!-- 第1.5块：临时插入无二级标题 -->
+				<div class="item1" style="background-color: rgb(255, 0, 255,.1);">
+					<div class=""></div>
+					<span class="tips_text">tips:一些网站需魔法<br>please:自备魔法哦！ </span>
+					<div class="you item1_img"></div>
+				</div>
+				<div class="item1_item2">
+					<!-- 这部分不能删 -->
+				</div>
+
+
+				<!-- 第二块：一级标题2 -->
+				<div class="item1">
+					<div class="item1_img2 item1_img"></div>
+					<span class="item1_text">影视大全</span>
+					<div class="you"></div>
+				</div>
+				<div class="item1_item2">
+					<div class="item2">
+						<span class="item2_text" id="zymp"><a href="http://www.zzzfun.com/">Zzzfun</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://m.acfun.cn">A站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://m.bilibili.com">B站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://www.tucao.eu/bgm/">C站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://www.5dm.app">D站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://e-hentai.org">E站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://www.fakku.net/login">F站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://gelbooru.com">G站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="http://www.halihali9.com">H站(halihali)</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="#">H2站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://www.iwara.tv">I站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://www.jdlingyu.com">J站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://github.com/topics/konachan">K站</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://www.fakku.net/login">L站</a></span>
+					</div>
+				</div>
+
+
+
+				<!-- 第三块：一级标题3 -->
+				<div class="item1">
+					<div class="item1_img6 item1_img"></div>
+					<span class="item1_text">更多工具</span>
+					<div class="you"></div>
+				</div>
+				<div class="item1_item2">
+					<div class="item2">
+						<span class="item2_text"><a href="#">二级标题1</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="#">二级标题1</a></span>
+					</div>
+				</div>
+
+
+
+
+				<!-- 第三块：一级标题3 -->
+				<div class="item1">
+					<div class="item1_img7 item1_img"></div>
+					<span class="item1_text">奇幻网页</span>
+					<div class="you"></div>
+				</div>
+				<div class="item1_item2">
+					<div class="item2">
+						<span class="item2_text"><a href="#">二级标题1</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="#">二级标题1</a></span>
+					</div>
+				</div>
+
+
+
+
+				<!-- 第三块：一级标题3 -->
+				<div class="item1">
+					<div class="item1_img8 item1_img"></div>
+					<span class="item1_text">应用下载</span>
+					<div class="you"></div>
+				</div>
+				<div class="item1_item2">
+					<div class="item2">
+						<span class="item2_text"><a href="#">二级标题1</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="#">二级标题1</a></span>
+					</div>
+				</div>
+
+
+
+				<!-- 第三块：一级标题3 -->
+				<div class="item1">
+					<div class="item1_img9 item1_img"></div>
+					<span class="item1_text">游戏脚本</span>
+					<div class="you"></div>
+				</div>
+				<div class="item1_item2">
+					<div class="item2">
+						<span class="item2_text"><a
+								href="https://www.fzbaw.com/qtyx/738.html#article-pl">原神Akbei(cc)</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="#">二级标题1</a></span>
+					</div>
+				</div>
+
+				<!-- 第三块：一级标题3 -->
+				<div class="item1">
+					<div class="item1_img3 item1_img"></div>
+					<span class="item1_text">敬请期待</span>
+					<div class="you"></div>
+				</div>
+				<div class="item1_item2">
+					<div class="item2">
+						<span class="item2_text"><a href="https://gitee.com/profile/account/verification">My
+								git</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="http://free.3v.do/member/index.asp">free3v.do</a></span>
+					</div>
+					<div class="item2">
+						<span class="item2_text"><a href="https://github.com/sirccl">my github</a></span>
+					</div>
+				</div>
+
+				<div class="bgcdl"></div>
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<section></section>
+
+	<!-- 二级左侧弹出菜单 -->
+
+
+
+
+
+</body>
+<!-- 二级菜单 -->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function () {
+
+		for (let i = 0; i < $('.item1').length; i++) {
+			if ($('.item1_item2')[i].children.length == 0) {
+				$('.item1')[i].children[2].className = 'item1_img'
+			}
+		}//遍历一级标题，如果二级标题为空则不显示图标
+
+		$('.item1').click(
+			function (val) {
+				console.log($(this).children()[1].innerText);//点击一级标题，打印点击的栏目
+				$('.content').html($(this).children()[1].innerText);//在内容页显示点击的按钮文字
+				if ($(this).next().is(":hidden")) {//如果二级导航没打开，打开它
+					$(this).next().show(500);
+					$(this).children('.you,.you2').css('transform', 'rotate(90deg)');//图片旋转90度
+				}
+				else if ($(this).next().children().length == 0) { }//如果没有二级导航，没操作
+				else {//如果二级导航打开了，关闭它
+					$(this).next().hide(400)
+					$('.you,.you2').css('transform', 'rotate(0deg)');//图片回到原来样子
+				}
+			}
+		);
+
+		$('.item2').click(//点击二级标题触发事件
+			function (val) {
+				console.log($(this).children()[0].innerText);
+				$('.content').html($(this).children()[0].innerText);
+			}
+		)
+
+	})
+</script>
+<!-- 二级菜单 -->
+
+
+
+</html>

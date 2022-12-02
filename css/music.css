@@ -1,0 +1,39 @@
+/* qq音乐 */
+#music {
+	position: fixed;
+	bottom: 65%;
+	right: -230px;
+	transition: 1s;
+	border-radius: 5px;
+	height: 66px;
+}
+
+#music:hover {
+	right: 10px;
+}
+
+/* qq音乐2 */
+#music2 {
+	position: fixed;
+	bottom: 55%;
+	right: -230px;
+	transition: 1s;
+	border-radius: 5px;
+	height: 66px;
+}
+
+#music2:hover {
+	right: 10px;
+}
+
+#music3 {
+	position: fixed;
+	bottom: 25%;
+	right: -220px;
+	transition: 1s;
+	border-radius: 5px;
+}
+
+#music3:hover {
+	right: 10px;
+}

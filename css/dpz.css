@@ -1,0 +1,27 @@
+.body15 {
+    margin-top: 20px;
+    background-image: url(/images/777_11.png);
+    display: flex;
+    justify-content: center;
+}
+
+.body15>.tishidpz {
+    position: relative;
+    font: 700 50px '';
+    color: #333;
+    cursor: pointer;
+}
+
+.body15>.tishidpz span {
+    transition: .5s;
+    transition-delay: calc(var(--i)*.1s);
+}
+
+.body15>.tishidpz:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 50px #fff,
+        0 0 80px #fff;
+}

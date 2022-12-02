@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	font: 14px Georgia, "Times New Roman", Arial, Sans-Serif;
+	background: #E8F7FC url('../images/7.png') repeat-x;
+	color: #306172;
+
+}
+
+a {
+	color: #3A65A8;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: normal;
+}
+
+h2 {
+	float: left;
+	font-size: 35px;
+	margin: 0 0 20px;
+	font-weight: normal;
+	color: #CB6F9C;
+	background: url('../images/introduce/h2bg.jpg') repeat-x bottom;
+}
+
+p {
+	clear: both;
+	margin: 5px 0 15px;
+	line-height: 23px;
+}
+
+.paragraph {
+	text-indent: 50px;
+	clear: both;
+	margin: 5px 0 5px;
+	line-height: 23px;
+}
+
+.clear {
+	clear: both;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1100px;
+}
+
+#logo {
+	float: left;
+	margin: 40px 0 0;
+}
+
+#menu {
+	float: right;
+	height: 120px;
+	padding: 74px 5px 0 98px;
+	width: 470px;
+	background: url('../images/introduce/white_bubbles.jpg') no-repeat top right;
+	border-radius: 15px;
+
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu li a {
+	float: left;
+	padding: 3px 6px;
+	margin: 0 20px 0 0;
+	font-size: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: initial;
+	color: #D46FA0;
+}
+
+#menu li a:hover,
+#menu li a.current {
+	background: #EDD3E0;
+}
+
+#text {
+	clear: both;
+	margin: 0 0 25px;
+	padding: 20px;
+	border: solid #d48db5 3px;
+	border-radius: 40px;
+	background: rgba(254, 255, 252, 0.3);
+	opaticy: 0;
+	column-count: 2;
+	column-gap: 40px;
+	column-rule-style: dotted;
+	-moz-column-count: 2;
+}
+
+#green_bubble {
+	padding: 30px 0 68px 280px;
+	height: 30px;
+	background: url('../images/introduce/green_bubbles.jpg') no-repeat center left;
+	border-radius: 15px;
+}
+
+#green_bubble li {
+	float: left;
+	font-size: 18px;
+	color: #34AE61;
+	font-weight: lighter;
+	margin: 5px 50px 0 0;
+}
+
+#footer {
+	padding: 85px 0 5px 0;
+	background: #FF99CB url('../images/introduce/bottom.jpg') repeat-x;
+}
+
+#copyright {
+	float: left;
+	margin: 80px 0 0;
+	color: #9D436F;
+	font-size: 14px;
+}
+
+#copyright p {
+	margin: 0 0 5px;
+}
+
+#bubble {
+	float: right;
+	font-size: 13px;
+	font-weight: bold;
+	color: #D46FA0;
+	background: url('../images/introduce/pink_bubbles.jpg') no-repeat;
+	width: 220px;
+	height: 210px;
+	padding: 52px 30px 0 150px;
+	text-align: right;
+}

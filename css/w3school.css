@@ -1,0 +1,12 @@
+#main>#w3s>.main-mod{
+	padding: 0px!important;
+}
+
+#main>#w3s iframe{
+	height: 100px;
+	transition: 1s;
+}
+
+#main>#w3s iframe:hover{
+	height: 500px;
+}
